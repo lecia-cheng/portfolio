@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.bc888b05.css",
+    "main.js": "/portfolio/static/js/main.9c3684a2.js",
+    "static/js/592.7f72a991.chunk.js": "/portfolio/static/js/592.7f72a991.chunk.js",
+    "static/media/code.jpg": "/portfolio/static/media/code.06a1b1c23605f343000a.jpg",
+    "static/media/scotia.jpg": "/portfolio/static/media/scotia.3720bbdcc89dcddcd8af.jpg",
+    "static/media/projectlead.jpg": "/portfolio/static/media/projectlead.ede05b41f35626893cbd.jpg",
+    "static/media/front-end.png": "/portfolio/static/media/front-end.59e8236312e82502a591.png",
+    "static/media/full-stack.png": "/portfolio/static/media/full-stack.4ac0591d74994b5f75ce.png",
+    "static/media/tangyrewards.jpg": "/portfolio/static/media/tangyrewards.f9e94dbfa728e2545d35.jpg",
+    "static/media/project-lead.png": "/portfolio/static/media/project-lead.ae60cf0276d89b86f723.png",
+    "static/media/speeddial.jpg": "/portfolio/static/media/speeddial.7e94001dbad6e4b6176c.jpg",
+    "static/media/miso.jpg": "/portfolio/static/media/miso.dacb36df7f5af74435fb.jpg",
+    "static/media/nourishnow.jpg": "/portfolio/static/media/nourishnow.eeb0195fa6ff14d345a1.jpg",
+    "static/media/codeninjaslogo.png": "/portfolio/static/media/codeninjaslogo.99333cb21d3afdc40dbc.png",
+    "static/media/re-corder.jpg": "/portfolio/static/media/re-corder.ecdf3d56929ce069fc92.jpg",
+    "static/media/scotialogo.png": "/portfolio/static/media/scotialogo.3f44706ce0a2be0a2e84.png",
+    "static/media/goosepainter.jpg": "/portfolio/static/media/goosepainter.bae713279cdbf537d7be.jpg",
+    "static/media/logo.svg": "/portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/nav-icon3.svg": "/portfolio/static/media/nav-icon3.76cc6c1aeb3254476dfcb0fce67df45e.svg",
+    "static/media/nav-icon2.svg": "/portfolio/static/media/nav-icon2.3900d400ed410a47f6e7d3117fe2a4b7.svg",
+    "index.html": "/portfolio/index.html",
+    "static/media/nav-icon1.svg": "/portfolio/static/media/nav-icon1.9f09419940e80957a8b2196bf86cd41c.svg",
+    "main.bc888b05.css.map": "/portfolio/static/css/main.bc888b05.css.map",
+    "main.9c3684a2.js.map": "/portfolio/static/js/main.9c3684a2.js.map",
+    "592.7f72a991.chunk.js.map": "/portfolio/static/js/592.7f72a991.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bc888b05.css",
+    "static/js/main.9c3684a2.js"
+  ]
+}
