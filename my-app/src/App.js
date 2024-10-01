@@ -1,14 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import Home from './Home';
+import Experience from './Experience';
+import Projects from './Projects';
+import { NavBar } from './NavBar';
 
 function App() {
   return (
-    <div className="App">
-      <div className="title">
-        <div className="back-title">DEV</div>
-        <div className="name-title"> &lt; LECIA CHENG &gt; </div>
-      </div>
+    <div className='App'>
+      <NavBar />
+      <Home />
+      <Experience />
+      <Projects />
     </div>
+    
   );
 }
 

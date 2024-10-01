@@ -6,6 +6,11 @@
 }
 
 .title{
+  display: flex;
+  flex-direction: column;
+}
+
+.title-text{
   position: relative;
   height: 100vh;
   width: 100vw;
@@ -16,7 +21,7 @@
 
 .back-title{
   z-index: 1;
-  font-size: 60vh;
+  font-size: 55vh;
   font-family: Impact, sans-serif;
   color: #ffff;
   transform: scaleY(1.4);
@@ -26,11 +31,576 @@
 
 .name-title{
   z-index: 2;
-  letter-spacing: 5vw;
-  font-size: 6vh;
+  letter-spacing: 4vw;
+  font-size: 5vh;
   font-family: 'Inria Serif', serif;
   font-weight: 400;
   text-align: center;
   position: relative;
   padding-left: 3.5%;
+  margin-bottom: 0;
+}
+
+.portfolio{
+  z-index: 3;
+  letter-spacing: 1.8vw;
+  font-family: 'Inria Serif', serif;
+  text-align: center; /* This centers the text */
+  position: absolute; /* Adjust as necessary */
+  font-weight: 1000;
+  top: 90%;
+  left: 41%;
+  color: #9AB4CA;
+  font-size: 3vh;
+}
+
+/************ Navbar Css ************/
+.name-box {
+  margin-top: 10px;
+  margin-left: 100px;
+}
+
+.name{
+  font-family: Centra;
+  color: #000;
+  font-size: 30px;
+  font-weight: 500;
+  margin-left: 5vw;
+}
+
+nav.navbar {
+  padding: 18px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  transition:  0.32s ease-in-out;
+}
+
+.navbar-nav{
+  display: flex;
+  margin-right: auto;
+}
+nav.navbar.scrolled {
+  padding: 0px 0;
+  background-color: #e2e2d4;
+  
+}
+nav.navbar a.navbar-brand {
+    width: 9%;
+}
+nav.navbar .navbar-nav .nav-link.navbar-link {
+  font-weight: 400;
+  color: #000 !important;
+  letter-spacing: 0.8px;
+  padding: 0 25px;
+  font-size: 18px;
+  opacity: 0.75;
+}
+nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
+nav.navbar .navbar-nav a.nav-link.navbar-link.active {
+    opacity: 1;
+}
+
+span.navbar-text {
+    display: flex;
+    align-items: center;
+}
+.social-icon {
+    display: inline-block;
+    margin-left: 14px;
+}
+.social-icon a {
+    width: 42px;
+    height: 42px;
+    background: rgba(217, 217, 217, 0.1);
+    display: inline-flex;
+    border-radius: 50%;
+    margin-right: 6px;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.social-icon a::before {
+    content: "";
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    background-color: #f4f4ee;
+    border-radius: 50%;
+    transform: scale(0);
+	transition: 0.3s ease-in-out;
+}
+.social-icon a:hover::before {
+    transform: scale(1);
+}
+.social-icon a img {
+	width: 40%;
+	z-index: 1;
+	transition: 0.3s ease-in-out;
+}
+.social-icon a:hover img {
+	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+}
+
+span.navbar-text{
+  display: flex;
+}
+
+.navbar-text button {
+  font-weight: 700;
+  color: #000;
+  border: 1px solid #000;
+  padding: 18px 34px;
+  font-size: 18px;
+  margin-left: 18px;
+	position: relative;
+	background-color: transparent;
+	transition: 0.3s ease-in-out;
+}
+.navbar-text button span {
+  z-index: 1;
+}
+.navbar-text button::before {
+  content: "";
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  background-color: #f4f4ee;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+}
+.navbar-text button:hover {
+  color: #000;
+}
+.navbar-text button:hover::before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+nav.navbar .navbar-toggler:active,
+nav.navbar .navbar-toggler:focus {
+	outline: none;
+    box-shadow: none;
+}
+nav.navbar .navbar-toggler-icon {
+  width: 24px;
+  height: 17px;
+  background-image: none;
+  position: relative;
+  border-bottom: 2px solid #000;
+  transition: all 300ms linear;
+  top: -2px;
+}
+nav.navbar .navbar-toggler-icon:focus {
+	border-bottom: 2px solid #000;
+}
+nav.navbar .navbar-toggler-icon:after,
+nav.navbar .navbar-toggler-icon:before {
+	width: 24px;
+	position: absolute;
+	height: 2px;
+	background-color: #000;
+	top: 0;
+	left: 0;
+	content: '';
+	z-index: 2;
+	transition: all 300ms linear;
+}
+nav.navbar .navbar-toggler-icon:after {
+	top: 8px;
+}
+nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+	transform: rotate(45deg);
+	background-color: #fff;
+	height: 2px;
+}
+nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+	transform: translateY(8px) rotate(-45deg);
+	background-color: #fff;
+	height: 2px;
+}
+nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+	border-color: transparent;
+}
+
+div.container{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 7vw;
+}
+
+div#basic-navbar-nav.navbar-collapse.collapse.show{
+  display: flex;
+  justify-content: space-between;
+}
+
+/**Card CSS**/
+.experience-title{
+  font-size: 5vh;
+  font-family: Impact, sans-serif;
+  color: #000;
+  letter-spacing: 0.5vw;
+  margin-top: -1vh;
+  margin-left: 1vw;
+}
+
+.work-title{
+  font-size: 5vh;
+  font-family: 'Inria Serif', serif;
+  font-weight: 400;
+  text-align: center;
+  position: relative;
+  margin-bottom: 1vh;
+  margin-left: 1vw;
+}
+
+.experience-container {
+  padding-top: 3vh;
+  margin-top: 10vh;
+  text-align: center;
+  margin-left: 10vw;
+  background-color: #E1DCD2;
+  border-radius: 5vh;
+  width: 80%;
+  margin-bottom: 8vh;
+  padding-bottom: 10vh;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 5vh;
+}
+
+.card {
+  cursor: pointer;
+  width: 20vw;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+  position: relative;
+  margin-top: 20px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-image {
+  height: 250px;  /* Increased from 200px */
+  background-size: cover;
+  background-position: center;
+}
+
+.card-content {
+  padding: 20px;  /* Increased from 15px */
+}
+
+.card-content h3 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.card-content p {
+  color: #000;
+  font-size: 1em;
+}
+
+/**Projects CSS**/
+
+.projects-App {
+  /* Your existing App styles */
+  justify-content: center;
+  align-items: center;
+  height: 140vh; /* Adjust based on your preference */
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.projects-container {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.scrolling-text {
+  display: inline-block;
+  animation: 50s slide infinite linear;
+  font-size: 20vh;
+  font-family: 'Inria Serif', serif;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.pinterest-board {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;  /* Increased from 40px to accommodate wider cards */
+  padding: 40px 20px;
+}
+
+.card {
+  width: 420px;  /* Increased from 250px */
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+  margin-top: 20px;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 20px;
+  background-color: #B8860B; /* Dark goldenrod color for the pin */
+  border-radius: 50% 50% 0 0;
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background-color: #FFD700; /* Gold color for the pin head */
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+  transform: translateY(-5px) rotate(2deg);
+}
+
+.card-image {
+  height: 250px;  /* Increased from 200px */
+  background-size: cover;
+  background-position: center;
+}
+
+.card-content {
+  padding: 20px;  /* Increased from 15px */
+}
+
+.card-description {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* New styles for the carousel */
+.carousel-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  position: relative; /* Add this */
+}
+
+.carousel-container {
+    max-width: 50vw;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.carousel-header {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.carousel-nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #333;
+}
+
+.carousel-content {
+    position: relative;
+    padding: 70px;
+}
+
+.project-card {
+    text-align: center;
+}
+
+.project-card h2 {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.project-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 48px; /* Increased font size for larger arrows */
+    color: #666;
+    cursor: pointer;
+    z-index: 10; /* Ensure buttons are above other elements */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.carousel-button:hover {
+    color: #333; /* Darker color on hover */
+}
+
+.carousel-button.prev {
+    left: 10px; /* Moved much further left */
+}
+
+.carousel-button.next {
+    right: 10px; /* Moved much further right */
+}
+
+.company-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.company-header-no-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.company-logo-tiny {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  margin-left: 2.5vw;
+}
+
+.company-logo-small {
+  width: 50px;
+  height: 50px;
+  margin-right: 1vw;
+  object-fit: contain;
+  margin-left: 4vw;
+}
+
+.project-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+}
+
+.project-link {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.project-link svg {
+    margin-right: 8px;
+}
+
+.project-link.devpost {
+    background-color: #003E54;
+}
+
+.project-link.github {
+    background-color: #24292e;
+}
+
+.project-link.figma {
+    background-color: #06402B;
+}
+
+.project-link.pitch-deck {
+    background-color: #000;
+}
+
+.project-link:hover {
+    opacity: 0.8;
+}
+
+.project-card {
+    position: relative;
+    padding-bottom: 60px; /* Make room for the buttons */
+}
+
+/* Ensure the carousel container doesn't overflow on smaller screens */
+@media (max-width: 1200px) {
+    .carousel-wrapper {
+        padding: 0 60px;
+    }
+    
+    .carousel-button.prev {
+        left: -50px;
+    }
+    
+    .carousel-button.next {
+        right: -50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-wrapper {
+        padding: 0 40px;
+    }
+    
+    .carousel-button.prev {
+        left: -30px;
+    }
+    
+    .carousel-button.next {
+        right: -30px;
+    }
+}
+
+.skills-title {
+    margin-top: 10px; /* Adjust this value to reduce space above the title */
+    font-weight: bold; /* Make the title bold */
+    font-size: 1.3em; /* Increase font size for better visibility */
+    color: #666;
+}
+
+.skills-description {
+    margin-top: 0; /* Remove or set to a smaller value to close the gap */
+    font-size: 0.9em; /* Adjust font size as needed */ 
 }
